@@ -8,8 +8,8 @@
 
     </ul>
 
-    <form action="/courses" method="post">
-        <input type="text" placeholder="course name" name="coursename">
+    <form onsubmit="return validateCourse();" action="/courses" method="post">
+        <input id="courseName" type="text" placeholder="course name" name="coursename">
         <input type="text" placeholder="course url" name="courseurl">
         <button>Submit</button>
     </form>
