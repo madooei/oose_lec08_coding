@@ -20,6 +20,8 @@ public class WebServer {
 
 //    CourseDao courseDao = new UnirestCourseDao();
 
+    staticFiles.location("public");
+
     get("/", ((request, response) -> {
       Map<String, Object> model = new HashMap<>();
       model.put("username", request.cookie("username"));
